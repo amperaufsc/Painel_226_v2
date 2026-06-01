@@ -152,17 +152,27 @@ int main(void)
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 
-   // filtro pra aceitar todos os IDs na FIFO 0
-  	HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_ACCEPT_IN_RX_FIFO0, FDCAN_REJECT, FDCAN_FILTER_REMOTE, FDCAN_FILTER_REMOTE);
+  // filtro pra aceitar todos os IDs na FIFO 0
+  FDCAN_FilterTypeDef sFilterConfig;// O nome correto para o U5 é FilterTypeDef
+
+  sFilterConfig.IdType = FDCAN_STANDARD_ID;
+  sFilterConfig.FilterIndex = 0;
+  sFilterConfig.FilterType = FDCAN_FILTER_MASK;
+  sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
+  sFilterConfig.FilterID1 = 0x000;
+  sFilterConfig.FilterID2 = 0x000; // Máscara 0 aceita tudo
+
+
+  HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_ACCEPT_IN_RX_FIFO0, FDCAN_REJECT, FDCAN_FILTER_REMOTE, FDCAN_FILTER_REMOTE);
 
     //liga o start can
-    if (HAL_FDCAN_Start(&hfdcan1) != HAL_OK)
+  if (HAL_FDCAN_Start(&hfdcan1) != HAL_OK)
     {
         Error_Handler();
     }
 
     //interrupção para receber as mensagens
-    if (HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0) != HAL_OK)
+  if (HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0) != HAL_OK)
     {
 
         Error_Handler();
