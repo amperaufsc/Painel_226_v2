@@ -21,6 +21,7 @@
 #include "jpeg_utils_conf.h"
 #include "cmsis_os2.h"
 #include "app_touchgfx.h"
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -67,6 +68,34 @@ LTDC_HandleTypeDef hltdc;
 
 /* USER CODE BEGIN PV */
 
+//variaveis que recebo do barramento can
+uint8_t falha_inversor; //
+uint8_t falha_tms; //
+uint8_t readtodrive_led; //
+uint8_t tensao_cel_min; //
+uint8_t tensao_cel_max; //
+uint8_t soc; //
+uint8_t acelerador; //
+uint8_t freio; //
+uint8_t temperatura_acc; //
+uint16_t falha_ecu; //
+uint16_t rpm; //
+uint16_t temperatura_motor; //
+uint16_t temperatura_inv; //
+float tensaoHV; //
+float tensao_inv; //
+float corrente_inv; //
+float correnteHV; //
+
+//variaveis recebidas de sa
+int velocidade;
+int distancia;
+
+//variaveis de comunicação externa
+FDCAN_RxHeaderTypeDef RxHeader;
+FDCAN_TxHeaderTypeDef TxHeader;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,7 +128,7 @@ typedef struct {
 } CAN_Message_t;
 
 //variável da fila do FreeRTOS gerada pelo CubeMX
-extern osMessageQueueId_t canRxQueueHandle;
+extern osMessageQueueId_t fila_msg_canHandle;
 
 /* USER CODE END 0 */
 
@@ -136,7 +165,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_GPDMA1_Init();
-  MX_FDCAN1_Init();
   MX_ICACHE_Init();
   MX_DCACHE1_Init();
   MX_DCACHE2_Init();
@@ -147,21 +175,13 @@ int main(void)
   MX_HSPI1_Init();
   MX_I2C2_Init();
   MX_JPEG_Init();
+  MX_FDCAN1_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 
   // filtro pra aceitar todos os IDs na FIFO 0
-  FDCAN_FilterTypeDef sFilterConfig;// O nome correto para o U5 é FilterTypeDef
-
-  sFilterConfig.IdType = FDCAN_STANDARD_ID;
-  sFilterConfig.FilterIndex = 0;
-  sFilterConfig.FilterType = FDCAN_FILTER_MASK;
-  sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
-  sFilterConfig.FilterID1 = 0x000;
-  sFilterConfig.FilterID2 = 0x000; // Máscara 0 aceita tudo
-
 
   HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_ACCEPT_IN_RX_FIFO0, FDCAN_REJECT, FDCAN_FILTER_REMOTE, FDCAN_FILTER_REMOTE);
 
@@ -419,7 +439,7 @@ static void MX_FDCAN1_Init(void)
   hfdcan1.Init.TransmitPause = DISABLE;
   hfdcan1.Init.ProtocolException = DISABLE;
   hfdcan1.Init.NominalPrescaler = 16;
-  hfdcan1.Init.NominalSyncJumpWidth = 1;
+  hfdcan1.Init.NominalSyncJumpWidth = 4;
   hfdcan1.Init.NominalTimeSeg1 = 13;
   hfdcan1.Init.NominalTimeSeg2 = 6;
   hfdcan1.Init.DataPrescaler = 1;
@@ -818,11 +838,10 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
         {
 
             msg.id = rxHeader.Identifier;
-            memcpy(msg.data, rxData, 8); // Copia os 8 bytes de dados
+            memcpy(msg.data, rxData, 8);
 
-            // Joga na fila do FreeRTOS para a IHM ler
-            if (canRxQueueHandle != NULL) {
-                osMessageQueuePut(canRxQueueHandle, &msg, 0, 0);
+            if (fila_msg_canHandle != NULL) {
+                osMessageQueuePut(fila_msg_canHandle, &msg, 0, 0);
             }
         }
     }
