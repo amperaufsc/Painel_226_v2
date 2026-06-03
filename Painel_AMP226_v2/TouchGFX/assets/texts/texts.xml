@@ -10,6 +10,15 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_3PF1" Alignment="Left" TypographyId="dados">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_02DA" Alignment="Center" TypographyId="dados">
+        <Translation Language="GB">&lt;value&gt; m</Translation>
+      </Text>
+      <Text Id="__SingleUse_TSO3" Alignment="Left" TypographyId="dados">
+        <Translation Language="GB">Distância</Translation>
+      </Text>
       <Text Id="__SingleUse_4DFR" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Falha ECU</Translation>
       </Text>

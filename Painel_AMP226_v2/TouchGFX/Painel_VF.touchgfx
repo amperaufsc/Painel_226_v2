@@ -160,7 +160,7 @@
             "Type": "TextArea",
             "Name": "tensaohvuni",
             "X": 571,
-            "Y": 56,
+            "Y": 54,
             "Width": 190,
             "Height": 45,
             "TextId": "__SingleUse_ST7A",
@@ -476,9 +476,7 @@
             "TextId": "__SingleUse_W6Z6",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             },
             "Wildcard1": {
               "TextId": "__SingleUse_EDG6",
@@ -496,9 +494,7 @@
             "TextId": "__SingleUse_RBPW",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             }
           },
           {
@@ -511,9 +507,7 @@
             "TextId": "__SingleUse_GPJB",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             },
             "Wildcard1": {
               "TextId": "__SingleUse_1J9A",
@@ -531,9 +525,7 @@
             "TextId": "__SingleUse_QFML",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             }
           },
           {
@@ -546,9 +538,7 @@
             "TextId": "__SingleUse_034B",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             },
             "Wildcard1": {
               "TextId": "__SingleUse_WBYH",
@@ -566,9 +556,7 @@
             "TextId": "__SingleUse_4DFR",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 255
             }
           }
         ],
@@ -778,7 +766,43 @@
           },
           {
             "Type": "TextArea",
-            "Name": "SOC",
+            "Name": "distanciauni",
+            "X": 362,
+            "Y": 402,
+            "Width": 80,
+            "Height": 35,
+            "TextId": "__SingleUse_02DA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3PF1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Distancia",
+            "X": 330,
+            "Y": 367,
+            "Width": 141,
+            "Height": 35,
+            "TextId": "__SingleUse_TSO3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "soc",
             "X": 362,
             "Y": 131,
             "Width": 76,

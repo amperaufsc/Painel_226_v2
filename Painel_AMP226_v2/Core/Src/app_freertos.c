@@ -29,7 +29,10 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef struct {
+    uint32_t id;
+    uint8_t data[8];
+} CAN_Message_t;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -118,7 +121,7 @@ void MX_FREERTOS_Init(void) {
   /* start timers, add new ones, ... */
   /* USER CODE END RTOS_TIMERS */
   /* creation of fila_msg_can */
-  fila_msg_canHandle = osMessageQueueNew (32, sizeof(uint32_t), &fila_msg_can_attributes);
+  fila_msg_canHandle = osMessageQueueNew (32, sizeof(CAN_Message_t), &fila_msg_can_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
