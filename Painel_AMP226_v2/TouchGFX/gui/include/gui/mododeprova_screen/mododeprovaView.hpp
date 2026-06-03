@@ -11,6 +11,14 @@ public:
     virtual ~mododeprovaView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    void updateRPM(int rpm);
+    void updateTempInversor(int temp);
+    void updateTempAcc(int temp);
+    void updateSOC(int soc);
+    void updateFreio(int freio);
+    void updateAcelerador(int acelera);
+    void updateVelocidade(int vel);
+    void updateDistancia(int metros);
 protected:
 };
 

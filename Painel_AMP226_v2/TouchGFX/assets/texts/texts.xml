@@ -10,6 +10,9 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_60MT" Alignment="Left" TypographyId="titulo">
+        <Translation Language="GB">MENU</Translation>
+      </Text>
       <Text Id="__SingleUse_3PF1" Alignment="Left" TypographyId="dados">
         <Translation Language="GB">0</Translation>
       </Text>

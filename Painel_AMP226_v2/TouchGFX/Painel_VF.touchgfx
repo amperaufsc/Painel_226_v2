@@ -919,6 +919,22 @@
             "Width": 800,
             "Height": 480,
             "CustomContainerDefinitionName": "Fundo_SA"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "menu",
+            "X": 378,
+            "Y": 429,
+            "Width": 107,
+            "Height": 41,
+            "TextId": "__SingleUse_60MT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
         "Interactions": []
