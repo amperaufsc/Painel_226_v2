@@ -27,7 +27,7 @@ public:
     virtual void deactivate();
 
     virtual ~mododeprovaPresenter() {}
-    virtual void updateRPM(int rpm);
+    	virtual void updateRPM(int rpm);
         virtual void updateTempInversor(int temp);
         virtual void updateTempAcc(int temp);
         virtual void updateSOC(int soc);

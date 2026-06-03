@@ -14,6 +14,7 @@ extern "C" osMessageQueueId_t fila_msg_canHandle;
 extern "C" {
     extern uint8_t falha_inversor;
     extern uint8_t readtodrive_led;
+    extern uint8_t readtodrive_botao;
     extern uint8_t falha_tms;
     extern uint16_t falha_ecu;
 
@@ -57,7 +58,6 @@ void Model::tick()
 							if (readtodrive_led == 3) {  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);
 							} else { HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET);}
 
-							modelListener->RTDativo(readtodrive_led);
 							modelListener->updateFalhaTMS(falha_tms);
 							modelListener->updateFalhaECU(falha_ecu);
 							modelListener->updateFalhaINV(falha_inversor);

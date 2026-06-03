@@ -71,13 +71,15 @@ LTDC_HandleTypeDef hltdc;
 //variaveis que recebo do barramento can
 uint8_t falha_inversor; //
 uint8_t falha_tms; //
-uint8_t readtodrive_led; //
+uint8_t readtodrive_led;
+uint8_t readtodrive_botao;//
 uint8_t tensao_cel_min; //
 uint8_t tensao_cel_max; //
 uint8_t soc; //
 uint8_t acelerador; //
 uint8_t freio; //
 uint8_t temperatura_acc; //
+
 uint16_t falha_ecu; //
 uint16_t rpm; //
 uint16_t temperatura_motor; //

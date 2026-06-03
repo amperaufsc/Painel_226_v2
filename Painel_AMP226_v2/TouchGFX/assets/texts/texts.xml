@@ -10,6 +10,90 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_0JJ3" Alignment="Left" TypographyId="pequenasletras">
+        <Translation Language="GB">Km/h</Translation>
+      </Text>
+      <Text Id="__SingleUse_7EWA" Alignment="Left" TypographyId="pequenasletras">
+        <Translation Language="GB">x 1000</Translation>
+      </Text>
+      <Text Id="__SingleUse_CT99" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_1AC4" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_A5N9" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_2FSH" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_N212" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">70</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTRW" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">60</Translation>
+      </Text>
+      <Text Id="__SingleUse_HHJ5" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">50</Translation>
+      </Text>
+      <Text Id="__SingleUse_W3T2" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">30</Translation>
+      </Text>
+      <Text Id="__SingleUse_UEK7" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">20</Translation>
+      </Text>
+      <Text Id="__SingleUse_TTRX" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">10</Translation>
+      </Text>
+      <Text Id="__SingleUse_P7P9" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">40</Translation>
+      </Text>
+      <Text Id="__SingleUse_G47C" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_AM96" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">80</Translation>
+      </Text>
+      <Text Id="__SingleUse_WV84" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_HFPN" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_RTFD" Alignment="Center" TypographyId="velocimetro">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_B9GX" Alignment="Left" TypographyId="pequenasletras">
+        <Translation Language="GB">VELOCIDADE</Translation>
+      </Text>
+      <Text Id="__SingleUse_VM1C" Alignment="Left" TypographyId="pequenasletras">
+        <Translation Language="GB">RPM</Translation>
+      </Text>
+      <Text Id="__SingleUse_U20V" Alignment="Left" TypographyId="velocidaderpm">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_RY8F" Alignment="Center" TypographyId="velocidaderpm">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MZZZ" Alignment="Left" TypographyId="velocidaderpm">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_I84W" Alignment="Center" TypographyId="velocidaderpm">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZAQS" Alignment="Center" TypographyId="titulo">
+        <Translation Language="GB">INV. OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_JYAU" Alignment="Center" TypographyId="titulo">
+        <Translation Language="GB">TMS OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_0JQM" Alignment="Center" TypographyId="titulo">
+        <Translation Language="GB">ECU OK&#10;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9S4G" Alignment="Center" TypographyId="dados">
+        <Translation Language="GB">ATIVADO</Translation>
+      </Text>
       <Text Id="__SingleUse_60MT" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">MENU</Translation>
       </Text>
@@ -29,7 +113,7 @@
         <Translation Language="GB">MENU</Translation>
       </Text>
       <Text Id="__SingleUse_UZNU" Alignment="Center" TypographyId="dados">
-        <Translation Language="GB">APERTADO</Translation>
+        <Translation Language="GB">DESATIVADO</Translation>
       </Text>
       <Text Id="__SingleUse_X5B0" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">RPM</Translation>
@@ -214,5 +298,7 @@
     <Typography Id="dados" Font="GothamRegular.otf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="titulo" Font="GothamUltra.otf" Size="35" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="pequenasletras" Font="GothamLight.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
+    <Typography Id="velocidaderpm" Font="GothamRegular.otf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
+    <Typography Id="velocimetro" Font="GothamRegular.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
   </Typographies>
 </TextDatabase>

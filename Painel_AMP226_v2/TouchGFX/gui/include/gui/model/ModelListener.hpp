@@ -18,7 +18,7 @@ public:
     }
 
     //Falhas
-    virtual void RTDativo(int rtd) {}
+    virtual void RTDbotao(int rtd) {}
     virtual void updateFalhaTMS(int falha) {}
     virtual void updateFalhaECU(int falha) {}
     virtual void updateFalhaINV(int falha) {}
