@@ -4,6 +4,7 @@
 #include "stm32u5xx_hal.h"
 #include <string.h>
 
+
 typedef struct {
     uint32_t id;
     uint8_t data[8];

@@ -53,29 +53,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tempaccuni",
-            "X": 29,
-            "Y": 52,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_0S0Y",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_K7JC",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tempinv",
             "X": 29,
-            "Y": 95,
+            "Y": 100,
             "Width": 190,
             "Height": 45,
             "TextId": "__SingleUse_TYOK",
@@ -88,29 +68,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tempinvuni",
-            "X": 29,
-            "Y": 138,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_4OWW",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_AY5G",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tempmotor",
-            "X": 4,
-            "Y": 175,
+            "X": 3,
+            "Y": 173,
             "Width": 240,
             "Height": 45,
             "TextId": "__SingleUse_981O",
@@ -119,26 +79,6 @@
               "Red": 255,
               "Green": 255,
               "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "tempmotoruni",
-            "X": 29,
-            "Y": 214,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_CCMT",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_SGSE",
-              "UseBuffer": true,
-              "BufferSize": 7
             }
           },
           {
@@ -158,29 +98,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tensaohvuni",
-            "X": 571,
-            "Y": 54,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_ST7A",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_QYZE",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tensaoinv",
             "X": 571,
-            "Y": 99,
+            "Y": 100,
             "Width": 190,
             "Height": 45,
             "TextId": "__SingleUse_TFN7",
@@ -189,26 +109,6 @@
               "Red": 255,
               "Green": 255,
               "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "tensaoinvuni",
-            "X": 571,
-            "Y": 140,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_FYLY",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_3VMS",
-              "UseBuffer": true,
-              "BufferSize": 7
             }
           },
           {
@@ -228,26 +128,6 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tensaocelminuni",
-            "X": 571,
-            "Y": 214,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_50KE",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_59SF",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tensaocelmax",
             "X": 540,
             "Y": 257,
@@ -259,26 +139,6 @@
               "Red": 255,
               "Green": 255,
               "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "tensaocelmaxuni",
-            "X": 575,
-            "Y": 298,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_B4T2",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_0FL5",
-              "UseBuffer": true,
-              "BufferSize": 7
             }
           },
           {
@@ -298,29 +158,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "correntehvuni",
-            "X": 304,
-            "Y": 54,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_P3EE",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_1P98",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "correnteinv",
             "X": 274,
-            "Y": 95,
+            "Y": 100,
             "Width": 250,
             "Height": 45,
             "TextId": "__SingleUse_1QTM",
@@ -329,26 +169,6 @@
               "Red": 255,
               "Green": 255,
               "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "correnteinvuni",
-            "X": 304,
-            "Y": 138,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_A5Y7",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_W3F3",
-              "UseBuffer": true,
-              "BufferSize": 7
             }
           },
           {
@@ -364,26 +184,6 @@
               "Red": 255,
               "Green": 255,
               "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "socuni",
-            "X": 33,
-            "Y": 300,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_FJ4M",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_QHUF",
-              "UseBuffer": true,
-              "BufferSize": 7
             }
           },
           {
@@ -406,7 +206,7 @@
             "Name": "rtddesativado",
             "X": 293,
             "Y": 298,
-            "Width": 212,
+            "Width": 205,
             "Height": 35,
             "TextId": "__SingleUse_UZNU",
             "TextRotation": "0",
@@ -422,7 +222,7 @@
             "Name": "rtdativado",
             "X": 326,
             "Y": 298,
-            "Width": 149,
+            "Width": 143,
             "Height": 35,
             "Visible": false,
             "TextId": "__SingleUse_9S4G",
@@ -451,9 +251,209 @@
           },
           {
             "Type": "TextArea",
-            "Name": "rpmuni",
+            "Name": "tempaccuni",
+            "X": 29,
+            "Y": 54,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_0S0Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_K7JC",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tempinvuni",
+            "X": 29,
+            "Y": 138,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_4OWW",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_AY5G",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tempmotoruni",
+            "X": 29,
+            "Y": 214,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_CCMT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_SGSE",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tensaohvuni",
+            "X": 571,
+            "Y": 54,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_ST7A",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_QYZE",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tensaoinvuni",
+            "X": 571,
+            "Y": 138,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_FYLY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3VMS",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tensaocelminuni",
+            "X": 571,
+            "Y": 214,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_50KE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_59SF",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tensaocelmaxuni",
+            "X": 575,
+            "Y": 298,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_B4T2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_0FL5",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "correntehvuni",
             "X": 304,
-            "Y": 216,
+            "Y": 54,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_P3EE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_1P98",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "correnteinvuni",
+            "X": 304,
+            "Y": 138,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_A5Y7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_W3F3",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "socuni",
+            "X": 33,
+            "Y": 300,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_FJ4M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_QHUF",
+              "UseBuffer": true,
+              "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpmuni",
+            "X": 305,
+            "Y": 214,
             "Width": 190,
             "Height": 45,
             "TextId": "__SingleUse_K7FO",
@@ -467,57 +467,6 @@
               "TextId": "__SingleUse_SHFM",
               "UseBuffer": true,
               "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "menu",
-            "X": 34,
-            "Y": 428,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_631Y",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "falhaecuuni",
-            "X": 25,
-            "Y": 386,
-            "Width": 190,
-            "Height": 45,
-            "TextId": "__SingleUse_W6Z6",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 221,
-              "Green": 43,
-              "Blue": 125
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_EDG6",
-              "UseBuffer": true,
-              "BufferSize": 7
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "falhainv",
-            "X": 300,
-            "Y": 365,
-            "Width": 190,
-            "Height": 45,
-            "Visible": false,
-            "TextId": "__SingleUse_RBPW",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 222,
-              "Green": 34,
-              "Blue": 110
             }
           },
           {
@@ -542,18 +491,22 @@
           },
           {
             "Type": "TextArea",
-            "Name": "falhatms",
-            "X": 585,
-            "Y": 345,
+            "Name": "falhaecuuni",
+            "X": 25,
+            "Y": 386,
             "Width": 190,
             "Height": 45,
-            "Visible": false,
-            "TextId": "__SingleUse_QFML",
+            "TextId": "__SingleUse_W6Z6",
             "TextRotation": "0",
             "Color": {
-              "Red": 222,
-              "Green": 34,
-              "Blue": 110
+              "Red": 221,
+              "Green": 43,
+              "Blue": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_EDG6",
+              "UseBuffer": true,
+              "BufferSize": 7
             }
           },
           {
@@ -574,6 +527,38 @@
               "TextId": "__SingleUse_WBYH",
               "UseBuffer": true,
               "BufferSize": 7
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "falhainv",
+            "X": 304,
+            "Y": 345,
+            "Width": 190,
+            "Height": 45,
+            "Visible": false,
+            "TextId": "__SingleUse_RBPW",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 34,
+              "Blue": 110
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "falhatms",
+            "X": 585,
+            "Y": 345,
+            "Width": 190,
+            "Height": 45,
+            "Visible": false,
+            "TextId": "__SingleUse_QFML",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 34,
+              "Blue": 110
             }
           },
           {
@@ -636,6 +621,21 @@
               "Green": 126,
               "Blue": 147
             }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "menu",
+            "X": 34,
+            "Y": 428,
+            "Width": 190,
+            "Height": 45,
+            "TextId": "__SingleUse_631Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
           }
         ],
         "Interactions": []
@@ -649,24 +649,6 @@
             "Width": 800,
             "Height": 480,
             "CustomContainerDefinitionName": "Fundo_provas"
-          },
-          {
-            "Type": "ImageProgress",
-            "Name": "bateria",
-            "X": 320,
-            "Y": 172,
-            "Width": 160,
-            "Height": 120,
-            "FileNameProgress": "batcheia.png",
-            "AnchorAtZero": true,
-            "Direction": "Up",
-            "FileNameBackground": "batvazia.png",
-            "IndicatorPositionX": 16,
-            "IndicatorPositionY": 33,
-            "IndicatorPositionWidth": 129,
-            "IndicatorPositionHeight": 83,
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 100
           },
           {
             "Type": "Gauge",
@@ -721,6 +703,24 @@
               "Blue": 197
             },
             "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "bateria",
+            "X": 320,
+            "Y": 172,
+            "Width": 160,
+            "Height": 120,
+            "FileNameProgress": "batcheia.png",
+            "AnchorAtZero": true,
+            "Direction": "Up",
+            "FileNameBackground": "batvazia.png",
+            "IndicatorPositionX": 16,
+            "IndicatorPositionY": 33,
+            "IndicatorPositionWidth": 129,
+            "IndicatorPositionHeight": 83,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 100
           },
           {
             "Type": "ImageProgress",
@@ -808,26 +808,6 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tempaccuni",
-            "X": 260,
-            "Y": 67,
-            "Width": 80,
-            "Height": 35,
-            "TextId": "__SingleUse_8IEH",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_RODC",
-              "UseBuffer": true,
-              "BufferSize": 6
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tempacctext",
             "X": 207,
             "Y": 15,
@@ -844,61 +824,11 @@
           },
           {
             "Type": "TextArea",
-            "Name": "distanciauni",
-            "X": 362,
-            "Y": 402,
-            "Width": 80,
-            "Height": 35,
-            "TextId": "__SingleUse_02DA",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_3PF1",
-              "UseBuffer": true,
-              "BufferSize": 14
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "rotacaouni",
-            "X": 86,
-            "Y": 195,
-            "Width": 80,
-            "Height": 45,
-            "TextId": "__SingleUse_I84W",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_MZZZ",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "velocidadeuni",
-            "X": 629,
-            "Y": 195,
-            "Width": 80,
-            "Height": 45,
-            "TextId": "__SingleUse_RY8F",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_U20V",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "Distancia",
-            "X": 330,
-            "Y": 367,
-            "Width": 141,
-            "Height": 35,
+            "X": 320,
+            "Y": 365,
+            "Width": 165,
+            "Height": 41,
             "TextId": "__SingleUse_TSO3",
             "TextRotation": "0",
             "Color": {
@@ -926,26 +856,6 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tempinvuni",
-            "X": 469,
-            "Y": 67,
-            "Width": 80,
-            "Height": 35,
-            "TextId": "__SingleUse_0SLQ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_BCB8",
-              "UseBuffer": true,
-              "BufferSize": 6
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "tempinvtext",
             "X": 418,
             "Y": 15,
@@ -959,46 +869,6 @@
               "Blue": 255
             },
             "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "aceleradoruni",
-            "X": 610,
-            "Y": 365,
-            "Width": 80,
-            "Height": 35,
-            "TextId": "__SingleUse_TAVP",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_755P",
-              "UseBuffer": true,
-              "BufferSize": 6
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "socuni",
-            "X": 325,
-            "Y": 292,
-            "Width": 150,
-            "Height": 35,
-            "TextId": "__SingleUse_T33I",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_5GU9",
-              "UseBuffer": true,
-              "BufferSize": 6
-            }
           },
           {
             "Type": "TextArea",
@@ -1081,6 +951,172 @@
           },
           {
             "Type": "TextArea",
+            "Name": "aceleradoruni",
+            "X": 610,
+            "Y": 365,
+            "Width": 100,
+            "Height": 35,
+            "TextId": "__SingleUse_TAVP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_755P",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tempinvuni",
+            "X": 469,
+            "Y": 67,
+            "Width": 80,
+            "Height": 35,
+            "TextId": "__SingleUse_0SLQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_BCB8",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "freiouni",
+            "X": 110,
+            "Y": 365,
+            "Width": 100,
+            "Height": 35,
+            "TextId": "__SingleUse_QHIY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_UV3O",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rotacaouni",
+            "X": 86,
+            "Y": 195,
+            "Width": 80,
+            "Height": 45,
+            "TextId": "__SingleUse_RY8F",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_U20V",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "velocidadeuni",
+            "X": 629,
+            "Y": 195,
+            "Width": 80,
+            "Height": 45,
+            "TextId": "__SingleUse_I84W",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_MZZZ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "distanciauni",
+            "X": 362,
+            "Y": 402,
+            "Width": 80,
+            "Height": 35,
+            "TextId": "__SingleUse_02DA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3PF1",
+              "UseBuffer": true,
+              "BufferSize": 14
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tempinvtext",
+            "X": 418,
+            "Y": 15,
+            "Width": 176,
+            "Height": 41,
+            "TextId": "__SingleUse_80A6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "aceleradoruni",
+            "X": 610,
+            "Y": 365,
+            "Width": 80,
+            "Height": 35,
+            "TextId": "__SingleUse_8IEH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_RODC",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "socuni",
+            "X": 325,
+            "Y": 292,
+            "Width": 150,
+            "Height": 35,
+            "TextId": "__SingleUse_T33I",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_5GU9",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
             "Name": "rpm0",
             "X": 45,
             "Y": 195,
@@ -1119,6 +1155,54 @@
             "Width": 12,
             "Height": 24,
             "TextId": "__SingleUse_RTFD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm3",
+            "X": 121,
+            "Y": 82,
+            "Width": 12,
+            "Height": 24,
+            "TextId": "__SingleUse_CT99",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm1",
+            "X": 39,
+            "Y": 142,
+            "Width": 8,
+            "Height": 24,
+            "TextId": "__SingleUse_2FSH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm2",
+            "X": 66,
+            "Y": 102,
+            "Width": 14,
+            "Height": 24,
+            "TextId": "__SingleUse_A5N9",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -1273,12 +1357,12 @@
           },
           {
             "Type": "TextArea",
-            "Name": "velocidade60",
-            "X": 718,
-            "Y": 118,
+            "Name": "velocidade50",
+            "X": 697,
+            "Y": 94,
             "Width": 28,
             "Height": 24,
-            "TextId": "__SingleUse_GTRW",
+            "TextId": "__SingleUse_HHJ5",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -1289,12 +1373,12 @@
           },
           {
             "Type": "TextArea",
-            "Name": "velocidade50",
-            "X": 697,
-            "Y": 94,
+            "Name": "velocidade60",
+            "X": 718,
+            "Y": 118,
             "Width": 28,
             "Height": 24,
-            "TextId": "__SingleUse_HHJ5",
+            "TextId": "__SingleUse_GTRW",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -1362,6 +1446,84 @@
               "Green": 255,
               "Blue": 255
             },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "menu_sa",
+            "Y": 200,
+            "Width": 800,
+            "Height": 70,
+            "TextId": "__SingleUse_GKZZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma",
+            "Width": 22,
+            "Height": 35,
+            "TextId": "__SingleUse_1VJ1",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_1",
+            "Width": 22,
+            "Height": 35,
+            "TextId": "__SingleUse_BQNP",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_2",
+            "Width": 26,
+            "Height": 41,
+            "TextId": "__SingleUse_7IHC",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_3",
+            "Width": 14,
+            "Height": 23,
+            "TextId": "__SingleUse_GDL4",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_4",
+            "Width": 29,
+            "Height": 47,
+            "TextId": "__SingleUse_7TX8",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_5",
+            "Width": 15,
+            "Height": 24,
+            "TextId": "__SingleUse_XPY4",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "fantasma_5_1",
+            "X": 7,
+            "Width": 37,
+            "Height": 59,
+            "TextId": "__SingleUse_JVQH",
+            "TextRotation": "0",
             "AutoSize": true
           }
         ],
