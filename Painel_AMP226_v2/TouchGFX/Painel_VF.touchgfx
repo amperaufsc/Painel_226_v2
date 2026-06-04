@@ -652,7 +652,7 @@
           },
           {
             "Type": "Gauge",
-            "Name": "rotacao",
+            "Name": "tacometro",
             "X": 6,
             "Y": 58,
             "Width": 240,
@@ -753,6 +753,26 @@
             "IndicatorPositionHeight": 59,
             "ProgressRangeMax": 100,
             "ProgressInitialValue": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "freiouni",
+            "X": 110,
+            "Y": 365,
+            "Width": 80,
+            "Height": 35,
+            "TextId": "__SingleUse_QHIY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_UV3O",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
           },
           {
             "Type": "TextArea",
@@ -991,8 +1011,8 @@
           },
           {
             "Type": "TextArea",
-            "Name": "velocidadeuni",
-            "X": 629,
+            "Name": "rotacaouni",
+            "X": 86,
             "Y": 195,
             "Width": 80,
             "Height": 45,
@@ -1006,8 +1026,8 @@
           },
           {
             "Type": "TextArea",
-            "Name": "rotacaouni",
-            "X": 85,
+            "Name": "velocidadeuni",
+            "X": 629,
             "Y": 195,
             "Width": 80,
             "Height": 45,
@@ -1041,9 +1061,25 @@
           },
           {
             "Type": "TextArea",
-            "Name": "tempaccuni",
-            "X": 260,
-            "Y": 67,
+            "Name": "tempinvtext",
+            "X": 418,
+            "Y": 15,
+            "Width": 176,
+            "Height": 41,
+            "TextId": "__SingleUse_80A6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "aceleradoruni",
+            "X": 610,
+            "Y": 365,
             "Width": 80,
             "Height": 35,
             "TextId": "__SingleUse_8IEH",
@@ -1119,6 +1155,54 @@
             "Width": 12,
             "Height": 24,
             "TextId": "__SingleUse_RTFD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm3",
+            "X": 121,
+            "Y": 82,
+            "Width": 12,
+            "Height": 24,
+            "TextId": "__SingleUse_CT99",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm1",
+            "X": 39,
+            "Y": 142,
+            "Width": 8,
+            "Height": 24,
+            "TextId": "__SingleUse_2FSH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm2",
+            "X": 66,
+            "Y": 102,
+            "Width": 14,
+            "Height": 24,
+            "TextId": "__SingleUse_A5N9",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
