@@ -41,20 +41,18 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// capa
+// teste
 
-void FrontendApplicationBase::gotocapaScreenNoTransition()
+void FrontendApplicationBase::gototesteScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotocapaScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gototesteScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotocapaScreenNoTransitionImpl()
+void FrontendApplicationBase::gototesteScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<capaView, capaPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<testeView, testePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
-
-// teste
 
 void FrontendApplicationBase::gototesteScreenBlockTransition()
 {

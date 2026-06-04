@@ -17,13 +17,12 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotocapaScreenNoTransition();
+        gototesteScreenNoTransition();
     }
 
-    // capa
-    void gotocapaScreenNoTransition();
-
     // teste
+    void gototesteScreenNoTransition();
+
     void gototesteScreenBlockTransition();
 
 protected:
@@ -31,10 +30,9 @@ protected:
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // capa
-    void gotocapaScreenNoTransitionImpl();
-
     // teste
+    void gototesteScreenNoTransitionImpl();
+
     void gototesteScreenBlockTransitionImpl();
 };
 

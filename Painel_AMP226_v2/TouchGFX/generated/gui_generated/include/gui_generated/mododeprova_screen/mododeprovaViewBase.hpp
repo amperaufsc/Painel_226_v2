@@ -32,26 +32,26 @@ protected:
     touchgfx::Box __background;
     Fundo_provas fundo_provas1;
     touchgfx::ImageProgress bateria;
-    touchgfx::Gauge rpm;
+    touchgfx::Gauge tacometro;
     touchgfx::TextArea rpm3;
     touchgfx::TextArea rpm5;
     touchgfx::TextArea rpm4;
     touchgfx::Gauge velocimetro;
     touchgfx::ImageProgress aceleradorbar;
     touchgfx::ImageProgress freiobar;
-    touchgfx::TextAreaWithOneWildcard freioun;
+    touchgfx::TextAreaWithOneWildcard freiouni;
     touchgfx::TextArea freiotext;
     touchgfx::TextArea menu;
     touchgfx::TextAreaWithOneWildcard tempaccuni;
     touchgfx::TextArea tempacctext;
     touchgfx::TextAreaWithOneWildcard distanciauni;
-    touchgfx::TextAreaWithOneWildcard rotacao;
-    touchgfx::TextAreaWithOneWildcard velocidade;
+    touchgfx::TextAreaWithOneWildcard rotacaouni;
+    touchgfx::TextAreaWithOneWildcard velocidadeuni;
     touchgfx::TextArea Distancia;
     touchgfx::TextArea soc;
     touchgfx::TextAreaWithOneWildcard tempinvuni;
     touchgfx::TextArea tempinvtext;
-    touchgfx::TextAreaWithOneWildcard aceleradorun;
+    touchgfx::TextAreaWithOneWildcard aceleradoruni;
     touchgfx::TextAreaWithOneWildcard socuni;
     touchgfx::TextArea aceleradortext;
     touchgfx::TextArea rpmtext;
@@ -75,20 +75,20 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t FREIOUN_SIZE = 6;
-    touchgfx::Unicode::UnicodeChar freiounBuffer[FREIOUN_SIZE];
+    static const uint16_t FREIOUNI_SIZE = 6;
+    touchgfx::Unicode::UnicodeChar freiouniBuffer[FREIOUNI_SIZE];
     static const uint16_t TEMPACCUNI_SIZE = 6;
     touchgfx::Unicode::UnicodeChar tempaccuniBuffer[TEMPACCUNI_SIZE];
     static const uint16_t DISTANCIAUNI_SIZE = 14;
     touchgfx::Unicode::UnicodeChar distanciauniBuffer[DISTANCIAUNI_SIZE];
-    static const uint16_t ROTACAO_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar rotacaoBuffer[ROTACAO_SIZE];
-    static const uint16_t VELOCIDADE_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar velocidadeBuffer[VELOCIDADE_SIZE];
+    static const uint16_t ROTACAOUNI_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar rotacaouniBuffer[ROTACAOUNI_SIZE];
+    static const uint16_t VELOCIDADEUNI_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar velocidadeuniBuffer[VELOCIDADEUNI_SIZE];
     static const uint16_t TEMPINVUNI_SIZE = 6;
     touchgfx::Unicode::UnicodeChar tempinvuniBuffer[TEMPINVUNI_SIZE];
-    static const uint16_t ACELERADORUN_SIZE = 6;
-    touchgfx::Unicode::UnicodeChar aceleradorunBuffer[ACELERADORUN_SIZE];
+    static const uint16_t ACELERADORUNI_SIZE = 6;
+    touchgfx::Unicode::UnicodeChar aceleradoruniBuffer[ACELERADORUNI_SIZE];
     static const uint16_t SOCUNI_SIZE = 6;
     touchgfx::Unicode::UnicodeChar socuniBuffer[SOCUNI_SIZE];
 

@@ -25,16 +25,16 @@ mododeprovaViewBase::mododeprovaViewBase()
     bateria.setAnchorAtZero(true);
     add(bateria);
 
-    rpm.setBackground(touchgfx::Bitmap(BITMAP_VELOCIMETRO_ID));
-    rpm.setPosition(6, 58, 240, 240);
-    rpm.setCenter(121, 120);
-    rpm.setStartEndAngle(-113, 112);
-    rpm.setRange(0, 6);
-    rpm.setValue(0);
-    rpm.setNeedle(BITMAP_PONTEIRO_ID, 19.7f, 82.0f);
-    rpm.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
-    rpm.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
-    add(rpm);
+    tacometro.setBackground(touchgfx::Bitmap(BITMAP_VELOCIMETRO_ID));
+    tacometro.setPosition(6, 58, 240, 240);
+    tacometro.setCenter(121, 120);
+    tacometro.setStartEndAngle(-113, 112);
+    tacometro.setRange(0, 6);
+    tacometro.setValue(0);
+    tacometro.setNeedle(BITMAP_PONTEIRO_ID, 19.7f, 82.0f);
+    tacometro.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    tacometro.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    add(tacometro);
 
     rpm3.setXY(121, 82);
     rpm3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -85,13 +85,13 @@ mododeprovaViewBase::mododeprovaViewBase()
     freiobar.setAnchorAtZero(true);
     add(freiobar);
 
-    freioun.setPosition(110, 365, 80, 35);
-    freioun.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    freioun.setLinespacing(0);
-    Unicode::snprintf(freiounBuffer, FREIOUN_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_UV3O).getText());
-    freioun.setWildcard(freiounBuffer);
-    freioun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QHIY));
-    add(freioun);
+    freiouni.setPosition(110, 365, 80, 35);
+    freiouni.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    freiouni.setLinespacing(0);
+    Unicode::snprintf(freiouniBuffer, FREIOUNI_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_UV3O).getText());
+    freiouni.setWildcard(freiouniBuffer);
+    freiouni.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QHIY));
+    add(freiouni);
 
     freiotext.setXY(96, 307);
     freiotext.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -127,21 +127,21 @@ mododeprovaViewBase::mododeprovaViewBase()
     distanciauni.setTypedText(touchgfx::TypedText(T___SINGLEUSE_02DA));
     add(distanciauni);
 
-    rotacao.setPosition(86, 195, 80, 45);
-    rotacao.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    rotacao.setLinespacing(0);
-    Unicode::snprintf(rotacaoBuffer, ROTACAO_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MZZZ).getText());
-    rotacao.setWildcard(rotacaoBuffer);
-    rotacao.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I84W));
-    add(rotacao);
+    rotacaouni.setPosition(86, 195, 80, 45);
+    rotacaouni.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    rotacaouni.setLinespacing(0);
+    Unicode::snprintf(rotacaouniBuffer, ROTACAOUNI_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_MZZZ).getText());
+    rotacaouni.setWildcard(rotacaouniBuffer);
+    rotacaouni.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I84W));
+    add(rotacaouni);
 
-    velocidade.setPosition(629, 195, 80, 45);
-    velocidade.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    velocidade.setLinespacing(0);
-    Unicode::snprintf(velocidadeBuffer, VELOCIDADE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_U20V).getText());
-    velocidade.setWildcard(velocidadeBuffer);
-    velocidade.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RY8F));
-    add(velocidade);
+    velocidadeuni.setPosition(629, 195, 80, 45);
+    velocidadeuni.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    velocidadeuni.setLinespacing(0);
+    Unicode::snprintf(velocidadeuniBuffer, VELOCIDADEUNI_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_U20V).getText());
+    velocidadeuni.setWildcard(velocidadeuniBuffer);
+    velocidadeuni.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RY8F));
+    add(velocidadeuni);
 
     Distancia.setXY(330, 367);
     Distancia.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -169,13 +169,13 @@ mododeprovaViewBase::mododeprovaViewBase()
     tempinvtext.setTypedText(touchgfx::TypedText(T___SINGLEUSE_80A6));
     add(tempinvtext);
 
-    aceleradorun.setPosition(610, 365, 80, 35);
-    aceleradorun.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    aceleradorun.setLinespacing(0);
-    Unicode::snprintf(aceleradorunBuffer, ACELERADORUN_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_755P).getText());
-    aceleradorun.setWildcard(aceleradorunBuffer);
-    aceleradorun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TAVP));
-    add(aceleradorun);
+    aceleradoruni.setPosition(615, 365, 80, 35);
+    aceleradoruni.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    aceleradoruni.setLinespacing(0);
+    Unicode::snprintf(aceleradoruniBuffer, ACELERADORUNI_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_755P).getText());
+    aceleradoruni.setWildcard(aceleradoruniBuffer);
+    aceleradoruni.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TAVP));
+    add(aceleradoruni);
 
     socuni.setPosition(325, 292, 150, 35);
     socuni.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));

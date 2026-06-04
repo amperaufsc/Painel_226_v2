@@ -670,7 +670,7 @@
           },
           {
             "Type": "Gauge",
-            "Name": "rpm",
+            "Name": "tacometro",
             "X": 6,
             "Y": 58,
             "Width": 240,
@@ -804,7 +804,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "freioun",
+            "Name": "freiouni",
             "X": 110,
             "Y": 365,
             "Width": 80,
@@ -912,7 +912,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "rotacao",
+            "Name": "rotacaouni",
             "X": 86,
             "Y": 195,
             "Width": 80,
@@ -927,7 +927,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "velocidade",
+            "Name": "velocidadeuni",
             "X": 629,
             "Y": 195,
             "Width": 80,
@@ -1010,8 +1010,8 @@
           },
           {
             "Type": "TextArea",
-            "Name": "aceleradorun",
-            "X": 610,
+            "Name": "aceleradoruni",
+            "X": 615,
             "Y": 365,
             "Width": 80,
             "Height": 35,
@@ -1436,7 +1436,7 @@
       "Height": 480
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "capa",
+    "StartupScreenName": "teste",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
