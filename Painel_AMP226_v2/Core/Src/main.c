@@ -36,7 +36,12 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+#define CAN_ID_RTD  0x141  // ID do botao RTD
+#define CAN_ID_PAG  0x54B  // ID das paginas
+#define CAN_ID_SA  0x347  // ID do modo de prova do sistema autonomo
+
 /* USER CODE END PD */
+
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
@@ -182,6 +187,17 @@ int main(void)
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
+
+  //configuração pra mandar mensagem can pelo botao
+  TxHeader.Identifier          = CAN_ID_RTD; //ID
+  TxHeader.IdType              = FDCAN_STANDARD_ID; //mensagem standart
+  TxHeader.TxFrameType         = FDCAN_DATA_FRAME;  // dataframe = mandar dados remoteframe = receber dados
+  TxHeader.DataLength          = FDCAN_DLC_BYTES_1; //tamanho mensagem em bytes
+  TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE; //identifica erros
+  TxHeader.BitRateSwitch       = FDCAN_BRS_OFF; //permite mudar a velocidade dos bits de dados
+  TxHeader.FDFormat            = FDCAN_CLASSIC_CAN; //
+  TxHeader.TxEventFifoControl  = FDCAN_NO_TX_EVENTS;
+  TxHeader.MessageMarker       = 0;
 
   // filtro pra aceitar todos os IDs na FIFO 0
 
