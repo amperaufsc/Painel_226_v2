@@ -670,7 +670,7 @@
           },
           {
             "Type": "Gauge",
-            "Name": "rpm",
+            "Name": "tacometro",
             "X": 6,
             "Y": 58,
             "Width": 240,
@@ -694,54 +694,6 @@
               "Blue": 197
             },
             "ArcCapStyle": "Butt"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "rpm3",
-            "X": 121,
-            "Y": 82,
-            "Width": 12,
-            "Height": 24,
-            "TextId": "__SingleUse_CT99",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "rpm5",
-            "X": 202,
-            "Y": 142,
-            "Width": 13,
-            "Height": 24,
-            "TextId": "__SingleUse_1AC4",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "rpm4",
-            "X": 178,
-            "Y": 102,
-            "Width": 14,
-            "Height": 24,
-            "TextId": "__SingleUse_A5N9",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
           },
           {
             "Type": "Gauge",
@@ -804,7 +756,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "freioun",
+            "Name": "freiouni",
             "X": 110,
             "Y": 365,
             "Width": 80,
@@ -912,7 +864,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "rotacao",
+            "Name": "rotacaouni",
             "X": 86,
             "Y": 195,
             "Width": 80,
@@ -927,7 +879,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "velocidade",
+            "Name": "velocidadeuni",
             "X": 629,
             "Y": 195,
             "Width": 80,
@@ -1010,7 +962,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "aceleradorun",
+            "Name": "aceleradoruni",
             "X": 610,
             "Y": 365,
             "Width": 80,
@@ -1145,6 +1097,22 @@
           },
           {
             "Type": "TextArea",
+            "Name": "rpm1",
+            "X": 39,
+            "Y": 142,
+            "Width": 8,
+            "Height": 24,
+            "TextId": "__SingleUse_2FSH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
             "Name": "rpm2",
             "X": 66,
             "Y": 102,
@@ -1161,12 +1129,44 @@
           },
           {
             "Type": "TextArea",
-            "Name": "rpm1",
-            "X": 39,
-            "Y": 142,
-            "Width": 8,
+            "Name": "rpm3",
+            "X": 121,
+            "Y": 82,
+            "Width": 12,
             "Height": 24,
-            "TextId": "__SingleUse_2FSH",
+            "TextId": "__SingleUse_CT99",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm4",
+            "X": 178,
+            "Y": 102,
+            "Width": 14,
+            "Height": 24,
+            "TextId": "__SingleUse_A5N9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "rpm5",
+            "X": 202,
+            "Y": 142,
+            "Width": 13,
+            "Height": 24,
+            "TextId": "__SingleUse_1AC4",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
