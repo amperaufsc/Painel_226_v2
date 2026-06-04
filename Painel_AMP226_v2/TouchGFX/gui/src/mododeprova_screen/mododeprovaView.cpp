@@ -72,14 +72,14 @@ void mododeprovaView::updateRPM(int valor_rpm)
 	        rpm6.setColor(touchgfx::Color::getColorFromRGB(222, 34, 110));
 	    }
 	    else if (valor_rpm > 5000) {
-	            rpm0.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm2.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm3.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm4.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm5.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	            rpm6.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-	        }
+			rpm0.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm2.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm3.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm4.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm5.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+			rpm6.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+		}
 
     Unicode::snprintf(rotacaouniBuffer, ROTACAOUNI_SIZE, "%d", valor_rpm);
     rotacaouni.invalidate();
