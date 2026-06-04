@@ -81,6 +81,11 @@ void Model::tick()
 							modelListener->updateTempAcc(temperatura_acc);
 							break;
 						}
+			case 0x141: {
+							readtodrive_botao = msg_recebida.data[0];
+							modelListener->RTDbotao(readtodrive_botao);
+							break;
+						}
 			case 0x220: {
 							correnteHV = 0.0f; //acumulador
 							corrente_inv = 0.0f; //inversor
