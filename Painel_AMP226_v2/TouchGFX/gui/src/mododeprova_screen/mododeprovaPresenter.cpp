@@ -26,7 +26,9 @@ void mododeprovaPresenter::Botao1(int bn1)
 
 void mododeprovaPresenter::Botao2(int bn2)
 {
-
+	if (bn2 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gotocapaScreenBlockTransition();
+	}
 }
 
 void mododeprovaPresenter::Botao3(int bn3)
