@@ -6,28 +6,7 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_JVQH" Alignment="Left" TypographyId="titulo_2">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_XPY4" Alignment="Left" TypographyId="velocimetro">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_7TX8" Alignment="Left" TypographyId="velocidaderpm">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_GDL4" Alignment="Left" TypographyId="pequenasletras">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_7IHC" Alignment="Left" TypographyId="titulo">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_BQNP" Alignment="Left" TypographyId="dadosnormal">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_1VJ1" Alignment="Left" TypographyId="dadosteste">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_GKZZ" Alignment="Center" TypographyId="titulo_2">
+      <Text Id="__SingleUse_CCDA" Alignment="Center" TypographyId="velocidaderpm">
         <Translation Language="GB">MENU SISTEMA AUTONOMO</Translation>
       </Text>
       <Text Id="__SingleUse_0JJ3" Alignment="Left" TypographyId="pequenasletras">

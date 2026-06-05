@@ -9,10 +9,31 @@ capaPresenter::capaPresenter(capaView& v)
 
 void capaPresenter::activate()
 {
-
+	model->idpagina(0);
 }
 
 void capaPresenter::deactivate()
 {
 
+}
+
+//botoes de controle
+void capaPresenter::Botao1(int bn1) //*^*//
+{
+	if (bn1 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gotomododeprovaScreenBlockTransition();
+	}
+}
+
+void capaPresenter::Botao2(int bn2)//*O*//
+{
+	if (bn2 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gotomenu_SAScreenBlockTransition();
+	}
+}
+void capaPresenter::Botao3(int bn3)//*X*//
+{
+	if (bn3 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gototesteScreenBlockTransition();
+	}
 }

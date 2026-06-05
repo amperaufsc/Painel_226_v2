@@ -14,9 +14,31 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "mudartela",
+            "InteractionName": "mudartelamododeprova",
             "Trigger": {
-              "Type": "TriggerNone"
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "mododeprova"
+            }
+          },
+          {
+            "InteractionName": "mudartelaSA",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "menu_SA"
+            }
+          },
+          {
+            "InteractionName": "mudartelateste",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
             },
             "Action": {
               "Type": "ActionGotoScreen",
@@ -638,7 +660,19 @@
             }
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "voltarmenu",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "capa"
+            }
+          }
+        ]
       },
       {
         "Name": "mododeprova",
@@ -1078,7 +1112,7 @@
           {
             "Type": "TextArea",
             "Name": "aceleradoruni",
-            "X": 610,
+            "X": 615,
             "Y": 365,
             "Width": 80,
             "Height": 35,
@@ -1451,80 +1485,16 @@
           {
             "Type": "TextArea",
             "Name": "menu_sa",
-            "Y": 200,
+            "Y": 220,
             "Width": 800,
-            "Height": 70,
-            "TextId": "__SingleUse_GKZZ",
+            "Height": 50,
+            "TextId": "__SingleUse_CCDA",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
               "Green": 255,
               "Blue": 255
             }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma",
-            "Width": 22,
-            "Height": 35,
-            "TextId": "__SingleUse_1VJ1",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_1",
-            "Width": 22,
-            "Height": 35,
-            "TextId": "__SingleUse_BQNP",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_2",
-            "Width": 26,
-            "Height": 41,
-            "TextId": "__SingleUse_7IHC",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_3",
-            "Width": 14,
-            "Height": 23,
-            "TextId": "__SingleUse_GDL4",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_4",
-            "Width": 29,
-            "Height": 47,
-            "TextId": "__SingleUse_7TX8",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_5",
-            "Width": 15,
-            "Height": 24,
-            "TextId": "__SingleUse_XPY4",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fantasma_5_1",
-            "X": 7,
-            "Width": 37,
-            "Height": 59,
-            "TextId": "__SingleUse_JVQH",
-            "TextRotation": "0",
-            "AutoSize": true
           }
         ],
         "Interactions": []

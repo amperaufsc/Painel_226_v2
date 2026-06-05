@@ -27,8 +27,8 @@ public:
         virtual void updateTensaoCelulaMin(int tesao);
         virtual void updateTensaoCelulaMax(int tesao);
 protected:
-        float valTensaoMin = 0.0f;
-        float valTensaoMax = 0.0f;
+        float valTensaoMin;
+        float valTensaoMax;
 };
 
 #endif // TESTEVIEW_HPP

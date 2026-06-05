@@ -10,10 +10,29 @@ mododeprovaPresenter::mododeprovaPresenter(mododeprovaView& v)
 
 void mododeprovaPresenter::activate()
 {
+	model->idpagina(2);
+}
+
+
+void mododeprovaPresenter::deactivate()
+{
 
 }
 
-void mododeprovaPresenter::deactivate()
+//botoes de controle
+void mododeprovaPresenter::Botao1(int bn1)
+{
+
+}
+
+void mododeprovaPresenter::Botao2(int bn2)
+{
+	if (bn2 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gotocapaScreenBlockTransition();
+	}
+}
+
+void mododeprovaPresenter::Botao3(int bn3)
 {
 
 }

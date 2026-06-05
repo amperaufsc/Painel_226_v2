@@ -36,7 +36,10 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+
+
 /* USER CODE END PD */
+
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
@@ -96,6 +99,10 @@ int distancia;
 //variaveis de comunicação externa
 FDCAN_RxHeaderTypeDef RxHeader;
 FDCAN_TxHeaderTypeDef TxHeader;
+
+//variavel da pagina
+volatile uint8_t pagina_atual;
+volatile uint8_t start_autonomo;
 
 
 /* USER CODE END PV */
@@ -183,6 +190,17 @@ int main(void)
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 
+  //configuração pra mandar mensagem can sem TxHeader.Identifier e TxHeader.DataLength que estao na mensagem no model.c
+  TxHeader.IdType              = FDCAN_STANDARD_ID; //mensagem standart
+  TxHeader.TxFrameType         = FDCAN_DATA_FRAME;  // dataframe = mandar dados remoteframe = receber dados
+  TxHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE; //identifica erros
+  TxHeader.BitRateSwitch       = FDCAN_BRS_OFF; //permite mudar a velocidade dos bits de dados
+  TxHeader.FDFormat            = FDCAN_CLASSIC_CAN; //
+  TxHeader.TxEventFifoControl  = FDCAN_NO_TX_EVENTS;
+  TxHeader.MessageMarker       = 0;
+
+
+
   // filtro pra aceitar todos os IDs na FIFO 0
 
   HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_ACCEPT_IN_RX_FIFO0, FDCAN_REJECT, FDCAN_FILTER_REMOTE, FDCAN_FILTER_REMOTE);
@@ -196,7 +214,6 @@ int main(void)
     //interrupção para receber as mensagens
   if (HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0) != HAL_OK)
     {
-
         Error_Handler();
     }
 

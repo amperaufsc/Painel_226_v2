@@ -16,7 +16,8 @@ public:
     {
         model = m;
     }
-
+    	//*funçoes virtuais vazias*//
+    	//*vao ser indicadas pelo ponteiro modellistener->*//
     //Falhas
     virtual void RTDbotao(int rtd) {}
     virtual void updateFalhaTMS(int falha) {}
@@ -43,6 +44,11 @@ public:
     virtual void updateFreio(int freio) {}
     virtual void updateVelocidade(int vel) {}
     virtual void updateDistancia(int metros) {}
+
+    //botoes
+    virtual void Botao1(int bn1) {}
+    virtual void Botao2(int bn2) {}
+    virtual void Botao3(int bn3) {}
 
 protected:
     Model* model;

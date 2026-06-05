@@ -89,6 +89,10 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN Private defines */
 
+#define CAN_ID_RTD  0x141  // ID do botao RTD
+#define CAN_ID_PAG  0x54B  // ID das paginas
+#define CAN_ID_SA  0x347  // ID do modo de prova do sistema autonomo
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
