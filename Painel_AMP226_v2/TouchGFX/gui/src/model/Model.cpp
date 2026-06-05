@@ -25,6 +25,7 @@ static uint8_t  btn_contador_3 = 0; //pra evitar de apertar o botao sem querer e
 static uint8_t  btn_apertado_3  = 0;
 
 
+
 typedef struct {
     uint32_t id;
     uint8_t data[8];

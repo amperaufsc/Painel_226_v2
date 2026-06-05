@@ -4,11 +4,7 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1">
-      <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-    </TextGroup>
+    <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
       <Text Id="__SingleUse_CCDA" Alignment="Center" TypographyId="velocidaderpm">
         <Translation Language="GB">MENU SISTEMA AUTONOMO</Translation>
@@ -94,19 +90,19 @@
       <Text Id="__SingleUse_0JQM" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">ECU OK&#10;</Translation>
       </Text>
-      <Text Id="__SingleUse_9S4G" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_9S4G" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">ATIVADO</Translation>
       </Text>
       <Text Id="__SingleUse_60MT" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">MENU</Translation>
       </Text>
-      <Text Id="__SingleUse_3PF1" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_3PF1" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_02DA" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_02DA" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt; m</Translation>
       </Text>
-      <Text Id="__SingleUse_TSO3" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_TSO3" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">Distância</Translation>
       </Text>
       <Text Id="__SingleUse_4DFR" Alignment="Center" TypographyId="titulo">
@@ -115,16 +111,16 @@
       <Text Id="__SingleUse_631Y" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">MENU</Translation>
       </Text>
-      <Text Id="__SingleUse_UZNU" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_UZNU" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">DESATIVADO</Translation>
       </Text>
       <Text Id="__SingleUse_X5B0" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">RPM</Translation>
       </Text>
-      <Text Id="__SingleUse_SHFM" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_SHFM" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_K7FO" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_K7FO" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_NV7K" Alignment="Center" TypographyId="titulo">
@@ -133,112 +129,112 @@
       <Text Id="__SingleUse_V593" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Tensão CelMáx</Translation>
       </Text>
-      <Text Id="__SingleUse_0FL5" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_0FL5" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_B4T2" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_B4T2" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
       <Text Id="__SingleUse_QFML" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Falha TMS</Translation>
       </Text>
-      <Text Id="__SingleUse_WBYH" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_WBYH" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_034B" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_034B" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_RBPW" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Falha Inv</Translation>
       </Text>
-      <Text Id="__SingleUse_1J9A" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_1J9A" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_GPJB" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_GPJB" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_EDG6" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_EDG6" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_W6Z6" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_W6Z6" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_GXU2" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Tensão HV</Translation>
       </Text>
-      <Text Id="__SingleUse_QYZE" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_QYZE" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_ST7A" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_ST7A" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
       <Text Id="__SingleUse_TFN7" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Tensão Inv</Translation>
       </Text>
-      <Text Id="__SingleUse_3VMS" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_3VMS" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_FYLY" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_FYLY" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; V </Translation>
       </Text>
       <Text Id="__SingleUse_GEJ3" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Tensão CelMin</Translation>
       </Text>
-      <Text Id="__SingleUse_59SF" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_59SF" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_50KE" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_50KE" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
       <Text Id="__SingleUse_OCWU" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Corrente HV</Translation>
       </Text>
-      <Text Id="__SingleUse_1P98" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_1P98" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_P3EE" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_P3EE" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; A</Translation>
       </Text>
       <Text Id="__SingleUse_1QTM" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Corrente Inv</Translation>
       </Text>
-      <Text Id="__SingleUse_W3F3" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_W3F3" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_A5Y7" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_A5Y7" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; A</Translation>
       </Text>
       <Text Id="__SingleUse_TA6X" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">SOC</Translation>
       </Text>
-      <Text Id="__SingleUse_QHUF" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_QHUF" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_FJ4M" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_FJ4M" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt; %</Translation>
       </Text>
       <Text Id="__SingleUse_981O" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Temp. Motor</Translation>
       </Text>
-      <Text Id="__SingleUse_SGSE" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_SGSE" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_CCMT" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_CCMT" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;°C</Translation>
       </Text>
       <Text Id="__SingleUse_TYOK" Alignment="Center" TypographyId="titulo">
         <Translation Language="GB">Temp. Inv</Translation>
       </Text>
-      <Text Id="__SingleUse_AY5G" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_AY5G" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_4OWW" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_4OWW" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;°C</Translation>
       </Text>
-      <Text Id="__SingleUse_K7JC" Alignment="Left" TypographyId="dados">
+      <Text Id="__SingleUse_K7JC" Alignment="Left" TypographyId="dadosteste">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_0S0Y" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_0S0Y" Alignment="Center" TypographyId="dadosteste">
         <Translation Language="GB">&lt;value&gt;°C</Translation>
       </Text>
       <Text Id="__SingleUse_R7FB" Alignment="Center" TypographyId="titulo">
@@ -247,61 +243,60 @@
       <Text Id="__SingleUse_VV2I" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">MENU</Translation>
       </Text>
-      <Text Id="__SingleUse_5GU9" Alignment="Left" TypographyId="titulo">
+      <Text Id="__SingleUse_5GU9" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_T33I" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_T33I" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt;%</Translation>
       </Text>
       <Text Id="__SingleUse_YRW6" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">SOC</Translation>
       </Text>
-      <Text Id="__SingleUse_BCB8" Alignment="Left" TypographyId="titulo">
+      <Text Id="__SingleUse_BCB8" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_0SLQ" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_0SLQ" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt; C°</Translation>
       </Text>
       <Text Id="__SingleUse_80A6" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">Temp. Inv</Translation>
       </Text>
-      <Text Id="__SingleUse_RODC" Alignment="Left" TypographyId="titulo">
+      <Text Id="__SingleUse_RODC" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_8IEH" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_8IEH" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt; C°</Translation>
       </Text>
       <Text Id="__SingleUse_B0I1" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">Temp. Acc</Translation>
       </Text>
-      <Text Id="__SingleUse_755P" Alignment="Left" TypographyId="titulo">
+      <Text Id="__SingleUse_755P" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_TAVP" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_TAVP" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt;%</Translation>
       </Text>
       <Text Id="__SingleUse_NQ6N" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">ACELERADOR</Translation>
       </Text>
-      <Text Id="__SingleUse_UV3O" Alignment="Left" TypographyId="titulo">
+      <Text Id="__SingleUse_UV3O" Alignment="Left" TypographyId="dadosnormal">
         <Translation Language="GB">0</Translation>
       </Text>
       <Text Id="__SingleUse_V8PZ" Alignment="Left" TypographyId="titulo">
         <Translation Language="GB">FREIO</Translation>
       </Text>
-      <Text Id="__SingleUse_QHIY" Alignment="Center" TypographyId="dados">
+      <Text Id="__SingleUse_QHIY" Alignment="Center" TypographyId="dadosnormal">
         <Translation Language="GB">&lt;value&gt;%</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="GothamRegular.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="dados" Font="GothamRegular.otf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
+    <Typography Id="dadosteste" Font="GothamMedium.otf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
+    <Typography Id="dadosnormal" Font="GothamRegular.otf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="titulo" Font="GothamUltra.otf" Size="35" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="pequenasletras" Font="GothamLight.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="velocidaderpm" Font="GothamRegular.otf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
     <Typography Id="velocimetro" Font="GothamRegular.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
+    <Typography Id="titulo_2" Font="GothamUltra.otf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="°-,.%" WildcardCharacterRanges="a-z,0-9" />
   </Typographies>
 </TextDatabase>
