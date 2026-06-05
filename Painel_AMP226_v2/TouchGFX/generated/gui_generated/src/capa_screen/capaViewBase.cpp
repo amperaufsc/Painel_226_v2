@@ -23,3 +23,33 @@ void capaViewBase::setupScreen()
 {
     capa1.initialize();
 }
+
+void capaViewBase::handleKeyEvent(uint8_t key)
+{
+    if(0 == key)
+    {
+        //mudartelamododeprova
+        //When hardware button 0 clicked change screen to mododeprova
+        //Go to mododeprova with block transition
+        application().gotomododeprovaScreenBlockTransition();
+    
+    }
+
+    if(0 == key)
+    {
+        //mudartelaSA
+        //When hardware button 0 clicked change screen to menu_SA
+        //Go to menu_SA with block transition
+        application().gotomenu_SAScreenBlockTransition();
+    
+    }
+
+    if(0 == key)
+    {
+        //mudartelateste
+        //When hardware button 0 clicked change screen to teste
+        //Go to teste with block transition
+        application().gototesteScreenBlockTransition();
+    
+    }
+}

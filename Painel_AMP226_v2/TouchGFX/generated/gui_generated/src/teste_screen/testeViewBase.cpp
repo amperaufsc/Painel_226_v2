@@ -266,3 +266,15 @@ void testeViewBase::setupScreen()
 {
     fundo_teste1.initialize();
 }
+
+void testeViewBase::handleKeyEvent(uint8_t key)
+{
+    if(0 == key)
+    {
+        //voltarmenu
+        //When hardware button 0 clicked change screen to capa
+        //Go to capa with block transition
+        application().gotocapaScreenBlockTransition();
+    
+    }
+}
