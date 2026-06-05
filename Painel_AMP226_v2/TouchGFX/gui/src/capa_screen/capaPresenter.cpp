@@ -16,3 +16,21 @@ void capaPresenter::deactivate()
 {
 
 }
+
+//botoes de controle
+void capaPresenter::Botao1(int bn1)
+{
+//	if (bn1 == 1){
+//		static_cast<FrontendApplication*>(Application::getInstance())->gotomododeprovaScreenBlockTransition();
+//	}
+}
+
+void capaPresenter::Botao2(int bn2)
+{
+
+}
+
+void capaPresenter::Botao3(int bn3)
+{
+
+}

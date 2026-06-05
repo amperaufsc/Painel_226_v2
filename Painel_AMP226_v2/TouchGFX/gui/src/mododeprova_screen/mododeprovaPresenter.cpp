@@ -18,6 +18,24 @@ void mododeprovaPresenter::deactivate()
 
 }
 
+//botoes de controle
+void mododeprovaPresenter::Botao1(int bn1)
+{
+//	if (bn1 == 1){
+//		static_cast<FrontendApplication*>(Application::getInstance())->gotoModoProvaScreenBlockTransition();
+//	}
+}
+
+void mododeprovaPresenter::Botao2(int bn2)
+{
+
+}
+
+void mododeprovaPresenter::Botao3(int bn3)
+{
+
+}
+
 void mododeprovaPresenter::updateRPM(int rpm)
 {
     view.updateRPM(rpm);

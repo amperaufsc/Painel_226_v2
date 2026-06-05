@@ -9,7 +9,20 @@
 static uint8_t  btn_contador = 0; //pra evitar de apertar o botao sem querer e ruido
 static uint8_t  btn_apertado  = 0;
 #define BTN_TICKS  5      // ticks necessarios pra confirmar a leitura do botao
-#define CAN_RTD_PRESSED 0x01   // valor enviado enquanto pressionado
+#define CAN_RTD_mensagem 0x01   // valor enviado enquanto pressionado
+
+//botao 1 *^* triangulo
+static uint8_t  btn_contador_1 = 0; //pra evitar de apertar o botao sem querer e ruido
+static uint8_t  btn_apertado_1  = 0;
+
+//botao 2 *o* bolinha
+static uint8_t  btn_contador_2 = 0; //pra evitar de apertar o botao sem querer e ruido
+static uint8_t  btn_apertado_2  = 0;
+
+//botao 3 *x* xis
+static uint8_t  btn_contador_3 = 0; //pra evitar de apertar o botao sem querer e ruido
+static uint8_t  btn_apertado_3  = 0;
+
 
 typedef struct {
     uint32_t id;
@@ -21,6 +34,7 @@ extern "C" osMessageQueueId_t fila_msg_canHandle;
 extern "C" {
 	extern FDCAN_HandleTypeDef hfdcan1;
 	extern FDCAN_TxHeaderTypeDef TxHeader;
+	extern FDCAN_RxHeaderTypeDef RxHeader;
 
     extern uint8_t falha_inversor;
     extern uint8_t readtodrive_led;
@@ -50,36 +64,107 @@ Model::Model() : modelListener(0)
 void Model::tick()
 
 {
-	CAN_Message_t msg_recebida;
+	 //*** configuração dos botoes pra serem lidos a cada tick(16ms) ***//
+	GPIO_PinState estado = HAL_GPIO_ReadPin(botaortd_GPIO_Port, botaortd_Pin); //le o botao rtd
+	GPIO_PinState botao1 = HAL_GPIO_ReadPin(botao1_GPIO_Port, botao1_Pin); //le o botao 1
+	GPIO_PinState botao2 = HAL_GPIO_ReadPin(botao2_GPIO_Port, botao2_Pin); //le o botao 2
+	GPIO_PinState botao3 = HAL_GPIO_ReadPin(botao3_GPIO_Port, botao3_Pin); //le o botao 3
 
+	//***** READ TO DRIVE START *****//
+	if (estado == GPIO_PIN_RESET)           // botão pressionado
+	{
+		if (btn_contador < BTN_TICKS) // se o botao tiver apertado enquanto o numero de ticks pra ler for menor
+			btn_contador++; // entao aumento o valor desta variavel pra evitar toques acidentais
+
+		if (btn_contador >= BTN_TICKS) //se atingiu o numero de ticks certo ele le o botao
+			btn_apertado = 1; //aqui muda e confirma que o botao ta apertado
+
+	}
+	else                                    // botão solto
+	{
+		btn_contador   = 0;
+		btn_apertado = 0;
+	}
+
+	if (btn_apertado == 1)
+	{  // envio da mensagem no can
+		uint8_t txData = CAN_RTD_mensagem;
+		HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &txData);
+		modelListener->RTDbotao(btn_apertado); //aqui vou mandar o valor do botão ate pq		        									//se ele aperta vai mandar um msm mas o um é so pra conferir se apertou
+	}
+
+	//***** READ TO DRIVE END *****//
+
+	//***** BOTAO 1 START *****//
+	if (botao1 == GPIO_PIN_RESET)           // botão pressionado
+	{
+		if (btn_contador_1 < BTN_TICKS) // se o botao tiver apertado enquanto o numero de ticks pra ler for menor
+			btn_contador_1++; // entao aumento o valor desta variavel pra evitar toques acidentais
+
+		if (btn_contador_1 >= BTN_TICKS) //se atingiu o numero de ticks certo ele le o botao
+			btn_apertado_1 = 1; //aqui muda e confirma que o botao ta apertado
+
+	}
+	else                                    // botão solto
+	{
+		btn_contador_1   = 0;
+		btn_apertado_1 = 0;
+	}
+
+	if (btn_apertado_1 == 1)
+	{
+		modelListener->Botao1(btn_apertado_1);
+	}
+	//***** BOTAO 1 END *****//
+
+	//***** BOTAO 2 START *****//
+	    if (botao2 == GPIO_PIN_RESET)
+	    {
+	        if (btn_contador_2 < BTN_TICKS)
+	        	btn_contador_2++;
+
+	        if (btn_contador_2 >= BTN_TICKS)
+	        	btn_apertado_2 = 1;
+	    }
+	    else
+	    {
+	        btn_contador_2 = 0;
+	        btn_apertado_2 = 0;
+	    }
+	    if (btn_apertado_2 == 1)
+	    {
+	        modelListener->Botao2(btn_apertado_2);
+	    }
+
+	    //***** BOTAO 2 END *****//
+
+	    //***** BOTAO 3 START *****//
+
+	    if (botao3 == GPIO_PIN_RESET)
+	    {
+	        if (btn_contador_3 < BTN_TICKS)
+	        	btn_contador_3++;
+
+	        if (btn_contador_3 >= BTN_TICKS)
+	        	btn_apertado_3 = 1;
+
+	    }
+	    else
+	    {
+	        btn_contador_3 = 0;
+	        btn_apertado_3 = 0;
+
+	    }
+	    if (btn_apertado_3 == 1)
+	    {
+	        modelListener->Botao3(btn_apertado_3);
+	    }
+
+	    //***** BOTAO 3 END *****//
+
+	CAN_Message_t msg_recebida;
 		while (osMessageQueueGet(fila_msg_canHandle, &msg_recebida, NULL, 0) == osOK)
 		{
-			GPIO_PinState estado = HAL_GPIO_ReadPin(botaortd_GPIO_Port, botaortd_Pin); //le o botao
-
-
-		    if (estado == GPIO_PIN_RESET)           // botão pressionado
-		    {
-		        if (btn_contador < BTN_TICKS) // se o botao tiver apertado enquanto o numero de ticks pra ler for menor
-		        	btn_contador++; // entao aumento o valor desta variavel pra evitar toques acidentais
-
-		        if (btn_contador >= BTN_TICKS) //se atingiu o numero de ticks certo ele le o botao
-		        	btn_apertado = 1; //aqui muda e confirma que o botao ta apertado
-
-		    }
-		    else                                    // botão solto
-		    {
-		    	btn_contador   = 0;
-		        btn_apertado = 0;
-		    }
-
-		    if (btn_apertado)
-		    {  // envio da mensagem no can
-		        uint8_t txData = CAN_RTD_PRESSED;
-		        HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &txData);
-
-		    }
-		    modelListener->RTDbotao(btn_apertado);
-
 			switch (msg_recebida.id)
 			{
 			case 0x120: {

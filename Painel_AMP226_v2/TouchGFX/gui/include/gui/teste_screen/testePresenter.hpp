@@ -26,23 +26,29 @@ public:
     virtual void deactivate();
 
 
-
+    		//*mesma classe do modellistener o que faz com que consiga pegar de modellistener.hhp*//
+    		//* como é declarada uma funcao vazia eu reescrevo com override*//
     virtual ~testePresenter() {}
-		virtual void updateFalhaTMS(int falha);
-		virtual void updateFalhaECU(int falha);
-		virtual void updateFalhaINV(int falha);
-		virtual void RTDbotao(int rtd);
-		virtual void updateSOC(int soc);
-		virtual void updateRPM(int rpm);
-		virtual void updateTempMotor(int temp);
-		virtual void updateTempInversor(int temp);
-		virtual void updateTempAcc(int temp);
-		virtual void updateCorrenteHV(float corrente);
-		virtual void updateCorrenteInv(float corrente);
-		virtual void updateTensaoHV(float tesao);
-		virtual void updateTensaoInversor(float tesao);
-		virtual void updateTensaoCelulaMin(int tesao);
-		virtual void updateTensaoCelulaMax(int tesao);
+		virtual void updateFalhaTMS(int falha) override;
+		virtual void updateFalhaECU(int falha) override;
+		virtual void updateFalhaINV(int falha) override;
+		virtual void RTDbotao(int rtd) override;
+		virtual void updateSOC(int soc) override;
+		virtual void updateRPM(int rpm) override;
+		virtual void updateTempMotor(int temp) override;
+		virtual void updateTempInversor(int temp) override;
+		virtual void updateTempAcc(int temp) override;
+		virtual void updateCorrenteHV(float corrente) override;
+		virtual void updateCorrenteInv(float corrente) override;
+		virtual void updateTensaoHV(float tesao) override;
+		virtual void updateTensaoInversor(float tesao) override;
+		virtual void updateTensaoCelulaMin(int tesao) override;
+		virtual void updateTensaoCelulaMax(int tesao) override;
+
+	    //botoes
+	    virtual void Botao1(int bn1) override;
+	    virtual void Botao2(int bn2) override;
+	    virtual void Botao3(int bn3) override;
 private:
     testePresenter();
 

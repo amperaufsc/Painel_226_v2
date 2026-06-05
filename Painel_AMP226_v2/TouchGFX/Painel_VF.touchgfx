@@ -16,7 +16,7 @@
           {
             "InteractionName": "mudartela",
             "Trigger": {
-              "Type": "TriggerNone"
+              "Type": "TriggerPhysicalButtonClicked"
             },
             "Action": {
               "Type": "ActionGotoScreen",

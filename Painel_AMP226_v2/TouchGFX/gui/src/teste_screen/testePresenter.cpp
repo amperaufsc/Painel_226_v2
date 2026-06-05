@@ -17,6 +17,22 @@ void testePresenter::deactivate()
 
 }
 
+//botoes de controle
+void testePresenter::Botao1(int bn1)
+{
+
+}
+
+void testePresenter::Botao2(int bn2)
+{
+
+}
+
+void testePresenter::Botao3(int bn3)
+{
+
+}
+
 void testePresenter::updateFalhaTMS(int falha)
 {
     view.updateFalhaTMS(falha);
