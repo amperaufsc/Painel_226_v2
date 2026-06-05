@@ -19,6 +19,12 @@ menu_SAViewBase::menu_SAViewBase()
     menu.setLinespacing(0);
     menu.setTypedText(touchgfx::TypedText(T___SINGLEUSE_60MT));
     add(menu);
+
+    menu_sa.setPosition(0, 220, 800, 50);
+    menu_sa.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    menu_sa.setLinespacing(0);
+    menu_sa.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CCDA));
+    add(menu_sa);
 }
 
 menu_SAViewBase::~menu_SAViewBase()

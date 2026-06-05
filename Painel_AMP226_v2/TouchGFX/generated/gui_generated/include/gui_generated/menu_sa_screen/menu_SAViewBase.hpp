@@ -29,6 +29,7 @@ protected:
     touchgfx::Box __background;
     Fundo_SA fundo_SA1;
     touchgfx::TextArea menu;
+    touchgfx::TextArea menu_sa;
 
 private:
 

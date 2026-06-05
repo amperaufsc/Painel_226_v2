@@ -9,7 +9,7 @@ capaPresenter::capaPresenter(capaView& v)
 
 void capaPresenter::activate()
 {
-
+	model->idpagina(0);
 }
 
 void capaPresenter::deactivate()

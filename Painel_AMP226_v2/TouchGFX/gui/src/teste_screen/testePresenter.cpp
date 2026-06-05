@@ -9,7 +9,7 @@ testePresenter::testePresenter(testeView& v)
 
 void testePresenter::activate()
 {
-
+	model->idpagina(1);
 }
 
 void testePresenter::deactivate()

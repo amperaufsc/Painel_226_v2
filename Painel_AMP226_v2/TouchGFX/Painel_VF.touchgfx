@@ -1397,6 +1397,20 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "menu_sa",
+            "Y": 220,
+            "Width": 800,
+            "Height": 50,
+            "TextId": "__SingleUse_CCDA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
           }
         ],
         "Interactions": []

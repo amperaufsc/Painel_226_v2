@@ -10,8 +10,9 @@ mododeprovaPresenter::mododeprovaPresenter(mododeprovaView& v)
 
 void mododeprovaPresenter::activate()
 {
-
+	model->idpagina(2);
 }
+
 
 void mododeprovaPresenter::deactivate()
 {

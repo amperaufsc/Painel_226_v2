@@ -10,6 +10,9 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_CCDA" Alignment="Center" TypographyId="velocidaderpm">
+        <Translation Language="GB">MENU SISTEMA AUTONOMO</Translation>
+      </Text>
       <Text Id="__SingleUse_0JJ3" Alignment="Left" TypographyId="pequenasletras">
         <Translation Language="GB">Km/h</Translation>
       </Text>

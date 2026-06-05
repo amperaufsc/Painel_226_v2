@@ -9,7 +9,7 @@ menu_SAPresenter::menu_SAPresenter(menu_SAView& v)
 
 void menu_SAPresenter::activate()
 {
-
+	model->idpagina(3);
 }
 
 void menu_SAPresenter::deactivate()

@@ -9,7 +9,8 @@
 static uint8_t  btn_contador = 0; //pra evitar de apertar o botao sem querer e ruido
 static uint8_t  btn_apertado  = 0;
 #define BTN_TICKS  5      // ticks necessarios pra confirmar a leitura do botao
-#define CAN_RTD_mensagem 0x01   // valor enviado enquanto pressionado
+
+uint8_t CAN_RTD_mensagem = 1;   // valor enviado enquanto botao rtd pressionado
 
 //botao 1 *^* triangulo
 static uint8_t  btn_contador_1 = 0; //pra evitar de apertar o botao sem querer e ruido
@@ -32,10 +33,16 @@ typedef struct {
 extern "C" osMessageQueueId_t fila_msg_canHandle;
 
 extern "C" {
+	//can
 	extern FDCAN_HandleTypeDef hfdcan1;
 	extern FDCAN_TxHeaderTypeDef TxHeader;
 	extern FDCAN_RxHeaderTypeDef RxHeader;
 
+	//mando
+	extern volatile uint8_t pagina_atual;
+	extern volatile uint8_t start_autonomo;
+
+	//recebo
     extern uint8_t falha_inversor;
     extern uint8_t readtodrive_led;
     extern uint8_t readtodrive_botao;
@@ -61,9 +68,48 @@ Model::Model() : modelListener(0)
 
 }
 
-void Model::tick()
-
+void Model::idpagina(uint8_t pag_atual)
 {
+	pagina_atual = pag_atual;
+}
+void Model::startautonomos(uint8_t sa)
+{
+	start_autonomo = sa;
+}
+
+void Model::tick()
+{
+	//configurando frequencia de envio das mensagens
+	//enviadas a cada 12 ticks ou 192ms ou 5hz
+	static uint8_t frequenciapag = 0;
+	static uint8_t frequenciaautonomos = 0;
+
+	frequenciapag++;
+	frequenciaautonomos++;
+//	frequenciartd++;
+
+	if (frequenciapag >= 12)
+	{
+		frequenciapag = 0;
+		//id pagina
+        TxHeader.Identifier = CAN_ID_PAG; //na main.h
+        TxHeader.DataLength = FDCAN_DLC_BYTES_1;
+        uint8_t dadoPag = pagina_atual;
+        HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &dadoPag);
+
+	}
+	if (frequenciaautonomos >= 12)
+	{
+		frequenciaautonomos = 0;
+		//id pagina
+        TxHeader.Identifier = CAN_ID_SA; //na main.h
+        TxHeader.DataLength = FDCAN_DLC_BYTES_1;
+        uint8_t dado_SA = start_autonomo;
+        HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &dado_SA);
+
+	}
+
+
 	 //*** configuração dos botoes pra serem lidos a cada tick(16ms) ***//
 	GPIO_PinState estado = HAL_GPIO_ReadPin(botaortd_GPIO_Port, botaortd_Pin); //le o botao rtd
 	GPIO_PinState botao1 = HAL_GPIO_ReadPin(botao1_GPIO_Port, botao1_Pin); //le o botao 1
@@ -82,14 +128,14 @@ void Model::tick()
 	}
 	else                                    // botão solto
 	{
-		btn_contador   = 0;
+		btn_contador  = 0;
 		btn_apertado = 0;
 	}
 
 	if (btn_apertado == 1)
 	{  // envio da mensagem no can
-		uint8_t txData = CAN_RTD_mensagem;
-		HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &txData);
+		uint8_t valorRTD = CAN_RTD_mensagem;
+		HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader, &valorRTD);
 		modelListener->RTDbotao(btn_apertado); //aqui vou mandar o valor do botão ate pq		        									//se ele aperta vai mandar um msm mas o um é so pra conferir se apertou
 	}
 
