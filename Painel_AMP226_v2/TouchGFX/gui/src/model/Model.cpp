@@ -1,3 +1,4 @@
+//funciona
 #include <gui/model/Model.hpp>
 #include <gui/model/ModelListener.hpp>
 #include "cmsis_os2.h"
