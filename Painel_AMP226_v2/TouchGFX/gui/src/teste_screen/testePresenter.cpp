@@ -23,9 +23,11 @@ void testePresenter::Botao1(int bn1)
 
 }
 
-void testePresenter::Botao2(int bn2)
+void testePresenter::Botao2(int bn2)//*O*//
 {
-
+	if (bn2 == 1){
+		static_cast<FrontendApplication*>(Application::getInstance())->gotocapaScreenBlockTransition();
+	}
 }
 
 void testePresenter::Botao3(int bn3)

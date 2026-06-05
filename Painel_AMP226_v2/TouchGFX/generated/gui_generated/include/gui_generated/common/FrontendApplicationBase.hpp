@@ -17,23 +17,41 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gototesteScreenNoTransition();
+        gotocapaScreenNoTransition();
     }
 
-    // teste
-    void gototesteScreenNoTransition();
+    // capa
+    void gotocapaScreenNoTransition();
 
+    void gotocapaScreenBlockTransition();
+
+    // teste
     void gototesteScreenBlockTransition();
+
+    // mododeprova
+    void gotomododeprovaScreenBlockTransition();
+
+    // menu_SA
+    void gotomenu_SAScreenBlockTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // teste
-    void gototesteScreenNoTransitionImpl();
+    // capa
+    void gotocapaScreenNoTransitionImpl();
 
+    void gotocapaScreenBlockTransitionImpl();
+
+    // teste
     void gototesteScreenBlockTransitionImpl();
+
+    // mododeprova
+    void gotomododeprovaScreenBlockTransitionImpl();
+
+    // menu_SA
+    void gotomenu_SAScreenBlockTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

@@ -41,18 +41,31 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// teste
+// capa
 
-void FrontendApplicationBase::gototesteScreenNoTransition()
+void FrontendApplicationBase::gotocapaScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gototesteScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotocapaScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gototesteScreenNoTransitionImpl()
+void FrontendApplicationBase::gotocapaScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<testeView, testePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<capaView, capaPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
+
+void FrontendApplicationBase::gotocapaScreenBlockTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotocapaScreenBlockTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotocapaScreenBlockTransitionImpl()
+{
+    touchgfx::makeTransition<capaView, capaPresenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// teste
 
 void FrontendApplicationBase::gototesteScreenBlockTransition()
 {
@@ -63,4 +76,30 @@ void FrontendApplicationBase::gototesteScreenBlockTransition()
 void FrontendApplicationBase::gototesteScreenBlockTransitionImpl()
 {
     touchgfx::makeTransition<testeView, testePresenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// mododeprova
+
+void FrontendApplicationBase::gotomododeprovaScreenBlockTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotomododeprovaScreenBlockTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotomododeprovaScreenBlockTransitionImpl()
+{
+    touchgfx::makeTransition<mododeprovaView, mododeprovaPresenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// menu_SA
+
+void FrontendApplicationBase::gotomenu_SAScreenBlockTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotomenu_SAScreenBlockTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotomenu_SAScreenBlockTransitionImpl()
+{
+    touchgfx::makeTransition<menu_SAView, menu_SAPresenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
